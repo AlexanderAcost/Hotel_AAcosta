@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Administracion\HotelController;
+use App\Http\Controllers\Clientes\ClientesController;
+use App\Http\Controllers\FacturacionController;
+use App\Http\Controllers\HabitacionesController;
+use App\Http\Controllers\ReservasController; 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,44 +18,44 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+//             RUTAS  CLIENTE 
+Route::get('clientes/visualizar',[ClientesController::class, 'showClientes']);
+
+//               RUTA FACTURACION
+Route::get('facturacion',[FacturacionController::class, 'getFactura']);
+
+
+
 //raiz
-Route::get('/', function () {
-    //return "Bienvenidos al hotel rivera";
-    return view('master');
-});
+Route::get('/',[HotelController::class, 'getIndex']);
+
 //historia
-Route::get('hotel/historia', function () {
-    //return "Creado en 2011";
-    return view('hotel.historia');
-});
+Route::get('hotel/historia',[HotelController::class, 'showHistoria']);
+
+
 //mision vision
-Route::get('hotel/mision-vision', function () {
-    //return "Mision y Vision";
-    return view('hotel.vision');
-});
+Route::get('hotel/mision-vision',[HotelController::class, 'showMision']);
+
+
 //ubicacion
-Route::get('hotel/ubicacion', function () {
-    //return "Ubicado eb Cartagena de Indias";
-    return view('hotel.ubicacion');
-});
+Route::get('hotel/ubicacion',[HotelController::class, 'showUbicacion']);
+
+
 //habitaciones
-Route::get('servicios/habitaciones', function () {
-    //return "Habitaciones tipo Estandar,Superior,Ejecutiva,Suite";
-    return view('servicios.habitaciones');
-});
+Route::get('servicios/habitaciones',[HabitacionesController::class, 'showHabitaciones']);
+
 //eventos
+
 Route::get('servicios/eventos/{id}', function ($id) {
     //return "Evento {$id}";
     return view('servicios.eventos',array ('id'=>$id));
 });
+
 //reservas
-Route::get('reservas', function () {
-    //return "Reservas";
-    return view('reservas.reservas');
-});
+Route::get('reservas',[ReservasController::class, 'getReservas']);
+
 //contactos
-Route::get('contactenos', function () {
-    //return "Contactos";
-    return view('contacto');
-});
+Route::get('contactenos',[HotelController::class, 'showContactos']);
+
 

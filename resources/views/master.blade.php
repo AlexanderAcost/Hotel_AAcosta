@@ -6,7 +6,7 @@
 
         <!-- CARGA CSS -->
         <link href="{{ url('/assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-
+        <link href="{{ url('/assets/bootstrap/css/estilos.css') }}" rel="stylesheet">
         <title>Hotel</title>
         
 
