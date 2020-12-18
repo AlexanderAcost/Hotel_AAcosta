@@ -48,6 +48,16 @@
             <a class="nav-link" href="{{url('contactenos')}}">Contactos</a>
         </li>
 
+      <li class="nav-item dropdown ">
+        <a class="nav-link dropdown-toggle" href="{{url('/')}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Consultas
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ route('con_primera') }}">Primera</a>
+          
+          <a class="dropdown-item" href="{{ route('con_tercera') }}">Tercera</a>
+          <a class="dropdown-item" href="{{ route('con_cuarta') }}">Cuerta</a>
+      </li>
       
     </ul>
     <form class="form-inline my-2 my-lg-0">

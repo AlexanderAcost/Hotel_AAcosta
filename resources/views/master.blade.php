@@ -6,7 +6,7 @@
 
         <!-- CARGA CSS -->
         <link href="{{ url('/assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-        <link href="{{ url('/assets/bootstrap/css/estilos.css') }}" rel="stylesheet">
+        <link href="{{ url('/assets/bootstrap/estilos.css') }}" rel="stylesheet">
         <title>Hotel</title>
         
 
@@ -14,11 +14,10 @@
     </head>
     <body class="antialiased">
         @include('navegation')
-
-        <div class="container">
+        <div class="wrapper">
             @yield('content')
         </div>
-
+        
 
         <!-- CARGA JQUERY POPPPERS Y JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -26,4 +25,8 @@
         <script type="text/javascript" src="{{ url('/assets/bootstrap/js/bootstrap.min.js')}}"></script>
         
     </body>
+    <footer>
+        @include('pie')
+    </footer>
+   
 </html>

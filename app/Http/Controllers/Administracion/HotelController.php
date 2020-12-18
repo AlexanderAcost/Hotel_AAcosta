@@ -9,7 +9,7 @@ class HotelController extends Controller
 {
     //
     public function getIndex(){
-        return view('master');
+        return view('principal');
     }
     public function showHistoria(){
         return view('hotel.historia');

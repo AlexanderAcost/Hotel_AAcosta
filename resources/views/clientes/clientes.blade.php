@@ -1,34 +1,58 @@
-@extends('master') 
+<div class="container">
+    @extends('master') 
+</div>
 @section('content') 
-    <h2>Clientes</h2>
+    <h2 style="text-align: center;">Listado Clientes</h2>
 
     <br><br>
-    
-    @foreach($cliente as $p)
-    <p>
-        <a class="btn btn-primary" data-toggle="collapse" href="#c{{$p->DNI}}" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">{{$p->nombres}}</a>     
-    </p>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="collapse multi-collapse" id="c{{$p->DNI}}">
-                <div class="card card-body " >
-                <pre>
+    <div class="container">
+        
+        <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Información</th>
+              </tr>
+            </thead>
+            @foreach($cliente as $p)
+            <tbody>
+                
+              <tr>
+                <th scope="row">{{$p->DNI}}</th>
+                <td>{{$p->nombres}}</td>
+                <td>
+                    <p>
+                        <a class="btn btn-primary" data-toggle="collapse" href="#c{{$p->DNI}}" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Más</a>     
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="collapse multi-collapse" id="c{{$p->DNI}}">
+                                <div class="card card-body " >
+                                    <h6 style="color: black;">Genero: {{$p->genero}}</h6>
+                                    <h6 style="color: black;">Domicilio: {{$p->domicilio}}</h6>
+                                    <h6 style="color: black;">Telefono: {{$p->telefono}}</h6>
+                                </pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="collapse multi-collapse " id="c{{$p->DNI}}">
+                                <div class="card card-body" style="width: 18rem;">
+                                <img class="card-img-top" alt="..." height="150" src="{{url("/imagenes/cliente/$p->foto")}}" >                
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
 
-    ID: {{$p->DNI}}
-    Genero: {{$p->genero}}
-    Domicilio: {{$p->domicilio}}
-    Telefono: {{$p->telefono}}
-                </pre>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="collapse multi-collapse " id="c{{$p->DNI}}">
-                <div class="card card-body" style="width: 18rem;">
-                <img class="card-img-top" alt="..." height="150" src="{{url("/imagenes/cliente/$p->foto")}}" >                
-                </div>
-            </div>
-        </div>
-    </div> 
-    @endforeach
+                </td>
+              </tr>
+              @endforeach
+            </tbody>
+          </table>
+        
+        
+    </div>
+    
 @stop
+

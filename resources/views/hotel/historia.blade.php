@@ -23,25 +23,26 @@
   </a>
 </div>
 <br><br>
-    <h2>Hotel Rivera</h2>
-    <h3><p>                                                                  Creado en 2011</p></h3>
-
+    <h2 style="text-align: center;">Hotel La Rivera</h2>
+    
     <div class="container">
-        <p>En 1956, se inicia la construcción del Hotel por la empresa Proyecto 
-Obras de la Construcción Corporation S.A.(POCSA), dirigida por Bartolomé Bastard, 
-Charlie Bacón y Arthur Fedelman. La compañía de Albert Cavin  se encargó de la decoración, 
-junto al arquitecto Igor Polevitsky.
+        <p>
+          En 1956, se inicia la construcción del Hotel por la empresa Proyecto 
+          Obras de la Construcción Corporation S.A.(POCSA), dirigida por Bartolomé Bastard, 
+          Charlie Bacón y Arthur Fedelman. La compañía de Albert Cavin  se encargó de la decoración, 
+          junto al arquitecto Igor Polevitsky.
         </p>
         <p>
-Por demás, el hotel fue bautizado con el nombre de Riviera en remembranza de la famosa Riviera Francesa.
-Ambos debieron marcharse de Colombia dejando atrás todos sus sueños de fortuna. El Riviera era, 
-por ese entonces, el centro de la mafia y los juegos de azar en Cartagena de indias.
+
+          Por demás, el hotel fue bautizado con el nombre de Riviera en remembranza de la famosa Riviera Francesa.
+          Ambos debieron marcharse de Colombia dejando atrás todos sus sueños de fortuna. El Riviera era, 
+          por ese entonces, el centro de la mafia y los juegos de azar en Cartagena de indias.
         </p>
         <p>
-Según refieren investigaciones arquitectónicas, la curiosa estructura esférica 
-al lado del edificio principal, pintado en colores vibrantes, fue una vez un casino, 
-acústicamente diseñado para que el sonido de las fichas y las máquinas tragaperras 
-se escuchara en el hotel y sedujera a los clientes al juego.
+          Según refieren investigaciones arquitectónicas, la curiosa estructura esférica 
+          al lado del edificio principal, pintado en colores vibrantes, fue una vez un casino, 
+          acústicamente diseñado para que el sonido de las fichas y las máquinas tragaperras 
+          se escuchara en el hotel y sedujera a los clientes al juego.
          </p>
     </div>
     

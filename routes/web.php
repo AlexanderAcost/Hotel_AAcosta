@@ -7,6 +7,8 @@ use App\Http\Controllers\Clientes\ClientesController;
 use App\Http\Controllers\FacturacionController;
 use App\Http\Controllers\HabitacionesController;
 use App\Http\Controllers\ReservasController; 
+use App\Http\Controllers\Consultas\consulta;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -59,3 +61,15 @@ Route::get('reservas',[ReservasController::class, 'getReservas']);
 Route::get('contactenos',[HotelController::class, 'showContactos']);
 
 
+//===========================Consultas
+//primera
+Route::get('consultas/primera',[consulta::class, 'primera'])->name('con_primera');
+
+//segunda
+
+Route::get('consultas/segunda',[consulta::class, 'segunda'])->name('con_segunda');
+//tercera
+
+Route::get('consultas/tercera',[consulta::class, 'tercera'])->name('con_tercera');
+//cuarta
+Route::get('consultas/cuarta',[consulta::class, 'cuarta'])->name('con_cuarta');
