@@ -8,8 +8,10 @@
     <br><br>
     <div class="container">    
     <div class="row">
+    
+
     @foreach($habitacion as $p)
- 
+        
         <div class="col-md-6">
 
             <div class="card border-primary" >

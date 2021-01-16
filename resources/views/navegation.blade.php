@@ -15,7 +15,8 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{url('hotel/historia')}}">Historia</a>
           <a class="dropdown-item" href="{{url('hotel/mision-vision')}}">Mision y Visión</a>
-          <a class="dropdown-item" href="{{url('hotel/ubicacion')}}">Ubicación</a>       
+          <a class="dropdown-item" href="{{url('hotel/ubicacion')}}">Ubicación</a>  
+        </div>     
       </li>
 
       <li class="nav-item dropdown">
@@ -25,7 +26,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{url('servicios/habitaciones')}}">Habitaciones</a>
           <a class="dropdown-item" href="{{url('servicios/eventos/2')}}">Eventos</a>
-          
+        </div>
       </li>
 
       <li class="nav-item dropdown">
@@ -33,8 +34,10 @@
           Clientes
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{url('clientes/formulario')}}">Registrar</a>
           <a class="dropdown-item" href="{{url('clientes/visualizar')}}">Visualizar</a>
-          
+          <a class="dropdown-item" href="{{url('clientes/formbuscar')}}">Buscar</a>
+        </div>  
       </li>
       
       <li class="nav-item">
@@ -57,6 +60,7 @@
           
           <a class="dropdown-item" href="{{ route('con_tercera') }}">Tercera</a>
           <a class="dropdown-item" href="{{ route('con_cuarta') }}">Cuerta</a>
+        </div>
       </li>
       
     </ul>

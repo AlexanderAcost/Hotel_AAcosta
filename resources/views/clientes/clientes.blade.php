@@ -1,6 +1,5 @@
-<div class="container">
-    @extends('master') 
-</div>
+@extends('master') 
+
 @section('content') 
     <h2 style="text-align: center;">Listado Clientes</h2>
 

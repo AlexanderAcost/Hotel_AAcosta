@@ -24,6 +24,13 @@ use App\Http\Controllers\Consultas\consulta;
 //             RUTAS  CLIENTE 
 Route::get('clientes/visualizar',[ClientesController::class, 'showClientes']);
 
+Route::get('clientes/formulario',[ClientesController::class, 'formulario']);
+Route::POST('clientes/registro',[ClientesController::class, 'registro']);
+
+Route::get('clientes/formbuscar',[ClientesController::class, 'formbuscar']);
+Route::POST('clientes/buscar',[ClientesController::class, 'buscar']);
+
+
 //               RUTA FACTURACION
 Route::get('facturacion',[FacturacionController::class, 'getFactura']);
 
